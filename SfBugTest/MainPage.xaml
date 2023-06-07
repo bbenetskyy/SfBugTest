@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfBugTest"
+             xmlns:textInputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             x:Class="SfBugTest.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        
+            <textInputLayout:SfTextInputLayout
+                x:Name="txt_task_subject_layout"
+                x:FieldModifier="Public"
+                WidthRequest="{Binding Screen_Display_Width}"
+                Padding="0,0,0,0"
+                Margin="10,0,10,0"
+                ContainerBackgroundColor="white"
+                UnfocusedColor="LightGray"
+                ContainerType="Outlined"
+                FocusedColor="red"
+                Hint="Subject"
+                ShowHelperText="false"
+                IsHintAlwaysFloated="True"
+                OutlineCornerRadius="0">
+            <Entry x:Name="txt_task_subject"
+                   x:FieldModifier="public"
+                   Text=""
+                   Margin="0,0,0,0"
+                   MaxLength="50"
+                   TextColor="Gray"
+                   ClearButtonVisibility="WhileEditing">
+            </Entry>
+        </textInputLayout:SfTextInputLayout>
+    </StackLayout>
+
+</ContentPage>
